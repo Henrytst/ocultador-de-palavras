@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ofuscador de Texto</title>
+    <link rel="stylesheet" href="CSS/FrontEnd.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    
+    <script>
+        function fazer() {
+            
+           /*let valorEntrada = document.getElementById('valorEntrada');           
+           valorEntrada.replace(/e/gi, 'enter').replace(/i/gi, 'inis').replace(/o/gi, 'omber').replace(/u/gi, 'ufer').replace(/a/gi, 'ais');
+            document.getElementById('valorSaida').value = valorEntrada;*/
+
+            //var valorSaida = valorEntrada.replace(/javascript/gi, "a");
+            //document.getElementById("entrada").innerHTML=(/a/g, 'BLING');
+            $('#valorSaida').val($('#valorEntrada').val()
+            .replace(/i/gi, 'inis').replace(/a/gi, 'ais').replace(/e/gi, 'enter').replace(/o/gi, 'omber').replace(/u/gi, 'ufter'));
+            //return(saida);
+        }
+        function desfazer() {
+
+            $('#valorSaida').val($('#valorSaida')
+            .val().replace(/inis/gi, 'i').replace(/ais/gi, 'a').replace(/enter/gi, 'e').replace(/omber/gi, 'o').replace(/ufter/gi, 'u'));
+            /*let valorSaida = document.getElementById('valorEntrada').replace=
+            (/ais/gi, 'a');
+            document.getElementById('valorSaida').value = valorSaida;*/
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="titulo"><p><strong>Ofuscador de Texto</strong></p></div>
+
+    <div class="textarea"><textarea id="valorEntrada" type="text" rows="15" cols="80" placeholder="Texto original"></textarea></div>
+
+    <p><button class="botao" onclick="fazer()">Ofuscar</button>
+    <button  class="botao2" onclick="desfazer()">Desofuscar</button></p>
+
+   <div class="textarea2"><textarea id="valorSaida" type="text" rows="15" cols="80" placeholder="Texto criptografado"></textarea></div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body{
+    background-color: rgba(104, 100, 100, 0.267);
+}
+.titulo{
+    color: #000000;
+    position: absolute;
+    left: 42%;
+    top: 0%;
+    font-style: oblique;
+    font-size: 25px;
+}
+.botao{
+    font-family: Arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1%;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(230, 62, 62);
+    position: absolute;
+    left: 30%;
+    top: 42%;
+}
+.botao2{
+    font-family: Arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1%;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(28, 146, 5);
+    position: absolute;
+    left: 37%;
+    top: 42%;
+}
+.textarea{
+    font-family: Arial;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.textarea2{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+}
+textarea::-webkit-input-placeholder{
+    font-family: cursive;
+}
